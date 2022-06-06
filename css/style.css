@@ -1293,6 +1293,7 @@ main {
     display: flex;
     width: 202px;
     justify-content: space-between;
+
 }
 
 .pagination-link {
