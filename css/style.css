@@ -442,11 +442,11 @@ li a {
 }
 
 .brand {
-    width: 377px;
+    width: 394px;
     height: 93px;
     top: 290px;
     position: relative;
-    margin-right: 100px;
+    margin-right: 101px;
     text-transform: uppercase;
 }
 
@@ -458,7 +458,7 @@ li a {
     height: 92px;
     background-color: #f16d7f;
     position: absolute;
-    top: -1px;
+    top: 4px;
     left: -28px;
 }
 
@@ -2151,4 +2151,218 @@ main {
     line-height: 29px;
     color: #F16D7F;
     margin: auto 0;
+}
+
+.registration {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.registration-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-form {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31px;
+}
+
+.registration-item-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.registration-item {
+    width: 100%;
+    max-width: 360px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    text-transform: capitalize;
+    padding: 13px 17px 16px;
+    box-sizing: border-box;
+}
+
+.registration-name>input:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.registration-gender {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.registration-gender-item {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.registration-gender-item:hover {
+    color: #F16D7F;
+}
+
+.registration-gender-btn {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    margin-right: 10px;
+}
+
+
+.registration-login_details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.registration-login_details-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.registration-login_details-item {
+    width: 100%;
+    max-width: 360px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    text-transform: capitalize;
+    padding: 13px 17px 16px;
+    box-sizing: border-box;
+
+}
+
+.registration-login_details>input:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.registration-login_details>input:nth-child(3) {
+    margin-bottom: 15px;
+}
+
+.registration-password-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+/* .registration-form-btn-wrp {
+    width: 100%;
+    max-width: 167px;
+} */
+
+.registration-form-btn {
+    width: 100%;
+    max-width: 167px;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding: 17px 0;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    border: none;
+    transition: all .3s ease-out;
+}
+
+.registration-form-btn svg {
+    fill: currentColor;
+    margin-left: 20px;
+}
+
+.registration-form-btn:hover {
+    color: #F16D7F;
+    background-color: #FFFFFF;
+    outline: 1px solid #F16D7F;
+}
+
+.registration-form-btn:active {
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    transform: scale(.9);
+}
+
+
+.offer {
+    width: 100%;
+    max-width: 652px;
+}
+
+.offer-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.offer-subtitle {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+}
+
+.offer-list {
+    margin-left: 30px;
+    list-style: url(../img/shape.png);
+
+}
+
+.offer-list-item {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+.registration-page {
+    margin-top: 96px;
 }
