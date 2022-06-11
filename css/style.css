@@ -2366,3 +2366,24 @@ main {
 .registration-page {
     margin-top: 96px;
 }
+
+
+
+/* Адаптив Index для планшета */
+
+@media (max-width:768px) {
+
+    .top {
+        padding: 20px 32px;
+    }
+
+    .banner-wrp {
+        min-height: 368px;
+    }
+
+    .banner {
+        min-height: 368px;
+        background-size: contain;
+        background-position: 110px 5px;
+    }
+}
