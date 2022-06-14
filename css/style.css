@@ -2480,6 +2480,10 @@ main {
         margin: 0 0 16px 0;
     }
 
+    .products>ul>li:nth-child(6) {
+        margin: 0;
+    }
+
     /* .item-img {
         max-width: 352px;
     } */
@@ -2500,12 +2504,13 @@ main {
 
     .subscribe {
         background-position-x: -388px;
+        min-height: 693px;
     }
 
     .subscribe-info {
         flex-direction: column;
         justify-content: flex-start;
-        min-height: 693px;
+
     }
 
     .women-words {
@@ -2548,27 +2553,40 @@ main {
         margin: 0;
     }
 
+    .banner-block {
+        margin: 0 0 64px 0;
+    }
+
     .banner {
         background-image: none;
+        align-items: center;
 
     }
 
     .brand {
-        max-width: 250px;
-        height: 66px;
+        max-width: 256px;
+        min-height: 66px;
         padding: 0;
+        top: 0;
+        right: 40px;
+
     }
 
     .brand::before {
-        height: 61px;
-        top: 5px;
+        max-width: 250px;
+        height: 66px;
+        padding: 0;
+        top: 3px;
     }
+
 
     .brand-title {
         font-style: normal;
         font-weight: 900;
         font-size: 38px;
         line-height: 46px;
+        max-width: 256px;
+        margin: 0;
     }
 
     .brand-title span {
@@ -2576,5 +2594,71 @@ main {
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
+    }
+
+    .categories {
+        padding: 0 15px;
+    }
+
+    .categories-item {
+        max-width: 348px;
+        min-height: 247px;
+    }
+
+    .categories>ul>li:nth-child(2) {
+        margin: 0 0 20px 0;
+    }
+
+    .categories>ul>li:nth-child(4) {
+        max-width: 343px;
+        min-height: 111px;
+        margin: 0;
+    }
+
+    .products {
+        margin: 64px 0 0 0;
+        padding: 0 8px;
+    }
+
+    .products-list {
+        margin: 64px 0 41px;
+    }
+
+    .shop-features {
+        margin: 96px 0 0 0;
+    }
+
+    .subscribe {
+        min-height: 550px;
+        background-position-x: -434px;
+    }
+
+    .subscribe-block {
+        margin: 59px 0 0 0;
+    }
+
+    .subscribe-subtitle {
+        margin: 0 0 22px 0;
+    }
+
+    .email {
+        opacity: .95;
+    }
+
+    .media-block {
+        flex-direction: column;
+        align-items: center;
+        padding: 43px 62px 9px;
+    }
+
+    .copyright {
+        padding: 0;
+        order: 2;
+    }
+
+    .media-list {
+        order: 1;
+        margin: 0 0 40px 0;
+        max-width: 150px;
     }
 }
