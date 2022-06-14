@@ -91,6 +91,18 @@ li a {
     margin-right: 40px;
 }
 
+.header-logo img {
+    transition: all .1s ease-out;
+}
+
+.header-logo img:hover {
+    transform: scale(1.15);
+}
+
+.header-logo img:active {
+    transform: scale(1);
+}
+
 .header-search-form {
     position: relative;
     background-color: #222222;
@@ -103,10 +115,12 @@ li a {
 
 .header-search-form svg {
     fill: #FFFFFF;
+    transition: all .15s ease-out;
 }
 
 .header-search-form:hover svg {
     fill: orange;
+    transform: scale(1.3);
 }
 
 
@@ -136,10 +150,12 @@ li a {
 
 .header-search-btn:focus~label>svg {
     fill: green;
+    transform: scale(1);
 }
 
 .header-search-btn:active~label>svg {
     fill: red;
+    transform: scale(1);
 }
 
 .header-search-btn:focus-visible {
@@ -159,10 +175,25 @@ li a {
     margin-right: 32px;
 }
 
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    transition: all .1s ease-out;
+}
+
+.menu-btn:hover span {
+    transform: scale(1.2);
+}
+
 .menu-btn:hover span,
 .menu-btn:hover span::before,
 .menu-btn:hover span::after {
     background-color: orange;
+
+}
+
+.menu-btn:active span {
+    transform: scale(1);
 }
 
 .menu-btn:active span,
@@ -335,15 +366,18 @@ li a {
 
 .account-btn svg {
     fill: #fff;
+    transition: all .1s linear;
 }
 
 
 .account-btn:hover svg {
     fill: orange;
+    transform: scale(1.25);
 }
 
 .account-btn:active svg {
     fill: red;
+    transform: scale(1);
 }
 
 .cart-btn-link {
@@ -359,14 +393,17 @@ li a {
     fill: #fff;
     width: 32px;
     height: 29px;
+    transition: all .1s linear;
 }
 
 .cart-btn-link:hover svg {
     fill: orange;
+    transform: scale(1.25);
 }
 
 .cart-btn-link:active svg {
     fill: red;
+    transform: scale(1);
 }
 
 .product-value {
@@ -405,11 +442,11 @@ li a {
 }
 
 .brand {
-    width: 377px;
+    width: 394px;
     height: 93px;
     top: 290px;
     position: relative;
-    margin-right: 100px;
+    margin-right: 101px;
     text-transform: uppercase;
 }
 
@@ -421,7 +458,7 @@ li a {
     height: 92px;
     background-color: #f16d7f;
     position: absolute;
-    top: -1px;
+    top: 4px;
     left: -28px;
 }
 
@@ -506,7 +543,16 @@ main {
     min-height: inherit;
     flex-wrap: wrap;
     text-transform: uppercase;
+    transition: all .5s ease-out;
+}
 
+.categories-item-link:hover {
+    transform: scale(1.5);
+}
+
+.categories-item-link:active {
+    transform: rotateY(180deg);
+    transform-origin: center;
 }
 
 .categories-item-title {
@@ -645,6 +691,7 @@ main {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     text-align: center;
+    transition: all .6s ease;
 }
 
 .products-btn {
@@ -662,12 +709,13 @@ main {
     background-color: #fff;
     border: 2px solid #F26376;
     box-sizing: border-box;
-
+    transition: all .6s ease;
 }
 
 .product-item-btn svg {
     fill: #fff;
     margin-right: 11px;
+    transition: all .4s ease;
 }
 
 .product-item:hover .product-item-photo {
@@ -692,10 +740,12 @@ main {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
+    transform: scale(0.8);
 }
 
 .product-item:hover .product-item-btn:active svg {
     fill: #fff;
+    transform: translateY(6px);
 }
 
 .products-btn:hover {
@@ -707,6 +757,7 @@ main {
     background-color: #fff;
     color: #F26376;
     border: 2px solid #F26376;
+    transform: scale(.8);
 }
 
 .shop-features {
@@ -809,6 +860,10 @@ main {
     margin-right: 110px;
 }
 
+.subscribe-block form {
+    display: flex;
+}
+
 .subscribe-title {
     text-transform: uppercase;
     font-style: normal;
@@ -863,17 +918,21 @@ main {
     opacity: 0.67;
     background-color: #F16D7F;
     border: 0;
+    transition: all .4s ease-out;
 
 }
 
 .submit-btn:hover {
     background-color: #FFFFFF;
     color: #F16D7F;
+    border: 1px solid #F16D7F;
+    transform: scale(1.1);
 }
 
 .submit-btn:active {
     background-color: #F16D7F;
     color: #FFFFFF;
+    transform: scale(.9);
 }
 
 .email:focus {
@@ -922,11 +981,26 @@ main {
 
 .media-item-link {
     display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+
+}
+
+.media-item-link svg {
+    transition: all .1s ease-out;
 }
 
 .media-item-link:hover svg {
     fill: #F16D7F;
+    transform: scale(1.3);
+}
+
+.media-item-link:active svg {
+    fill: black;
+    transform: scale(1.0);
 }
 
 .catalog-nav-wrp {
@@ -977,6 +1051,22 @@ main {
     color: #636363;
 }
 
+.homepage-link {
+    transition: all .2s ease-out;
+}
+
+.homepage-link:hover {
+    transform: scale(1.1);
+}
+
+.men-page-link {
+    transition: all .2s ease-out;
+}
+
+.men-page-link:hover {
+    transform: scale(1.1);
+}
+
 .current-page-name {
     text-transform: uppercase;
     font-style: normal;
@@ -984,6 +1074,8 @@ main {
     font-size: 14px;
     line-height: 17px;
     color: #F16D7F;
+    padding-top: 2px;
+    box-sizing: border-box;
 }
 
 .men-page-link::before,
@@ -1036,10 +1128,12 @@ main {
 
 .filter-input:hover {
     color: #F16D7F;
+
 }
 
 .filter-input:active {
     color: #222224;
+
 }
 
 
@@ -1170,6 +1264,7 @@ main {
     list-style-type: none;
     box-sizing: border-box;
     position: relative;
+
 }
 
 .sorting-item-title span {
@@ -1189,8 +1284,10 @@ main {
     fill: currentColor;
 }
 
+
 .sorting-item-title:hover span {
     color: #F16D7F;
+
 }
 
 .sorting-item-title:active span {
@@ -1338,28 +1435,34 @@ main {
     line-height: 19px;
     color: #5D5D5D;
     cursor: pointer;
+    transition: all .1s ease-out;
 }
 
 .pagination-slider {
     padding-top: 4px;
+    transition: all .1s ease-out;
 }
 
 .pagination-slider svg:hover {
     fill: #F16D7F;
+    transform: scale(1.3);
 }
 
 
 .pagination-link:hover {
     color: #F16D7F;
+    transform: scale(1.2);
 }
 
 .pagination-slider svg:active {
     fill: #5D5D5D;
+    transform: scale(.9);
 }
 
 
 .pagination-link:active {
     color: #5D5D5D;
+    transform: scale(.9);
 }
 
 .product-cart {
@@ -1385,14 +1488,17 @@ main {
     height: 47px;
     background: rgba(42, 42, 42, 0.15);
     border: none;
+    transition: all .1s ease-out;
 }
 
 .slider-btn:hover svg {
     fill: #F16D7F;
+    transform: scale(1.3);
 }
 
 .slider-btn:active svg {
     fill: #5D5D5D;
+    transform: scale(.9);
 }
 
 .moschino-product-cart {
@@ -1487,6 +1593,7 @@ main {
     max-width: 65px;
 } */
 
+
 .choosing-item-title span {
     padding: 0 10px 0 0;
     font-style: normal;
@@ -1498,7 +1605,7 @@ main {
 }
 
 .choosing-item-title svg {
-    fill: #6F6E6E;
+    fill: currentColor;
     padding-bottom: 2px;
 }
 
@@ -1530,6 +1637,7 @@ main {
     background-color: transparent;
     border: 1px solid #EF5B70;
     /* text-align: center; */
+    transition: all .5s linear;
 }
 
 .add-product-btn span {
@@ -1554,6 +1662,7 @@ main {
 
 .add-product-btn:active {
     background-color: #FFFFFF;
+    transform: scale(.9);
 }
 
 .add-product-btn:hover span {
@@ -1570,6 +1679,7 @@ main {
 
 .add-product-btn:active svg {
     fill: #EF5B70;
+    transform: translateY(5px);
 }
 
 .product-page {
@@ -1637,7 +1747,7 @@ main {
     height: 18px;
     right: 22px;
     top: 24px;
-
+    border: none;
 }
 
 
@@ -1831,6 +1941,7 @@ main {
     text-transform: uppercase;
     background-color: transparent;
     border: 1px solid #A4A4A4;
+    transition: all .3s ease-out;
 }
 
 .cart-products-box-btn:hover {
@@ -1841,6 +1952,7 @@ main {
 .cart-products-box-btn:active {
     color: #A4A4A4;
     background-color: transparent;
+    transform: scale(.9);
 }
 
 .shipping-checkout {
@@ -1896,16 +2008,17 @@ main {
 
 .get-quote-btn {
     width: 100%;
-    max-width: 100px;
+    max-width: 103px;
     padding: 6px 13px;
     border: 1px solid #A4A4A4;
     background-color: #FFFFFF;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 11px;
     line-height: 13px;
     color: #4A4A4A;
     text-transform: uppercase;
+    transition: all .3s ease-out;
 }
 
 /* .get-quote-btn span {
@@ -1926,6 +2039,7 @@ main {
 .get-quote-btn:active {
     color: #A4A4A4;
     background-color: transparent;
+    transform: scale(.9);
 }
 
 .checkout-total {
@@ -1935,6 +2049,7 @@ main {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    background-color: #F5F3F3;
 }
 
 .sub-total {
@@ -1999,8 +2114,9 @@ main {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #F16D7F;
-    padding: 15.5px 42px;
+    padding: 15.5px 37px;
     border: none;
+    transition: all .3s ease-out;
 }
 
 .proceed-checkout-btn:hover {
@@ -2013,8 +2129,261 @@ main {
     color: #2c2828;
     background-color: transparent;
     border: 2px solid #EF5B70;
+    transform: scale(.9);
 }
 
 .cart-page {
     margin-top: 128px;
+}
+
+.registration-top {
+    background-color: #F1E4E6;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.registration-top-title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    margin: auto 0;
+}
+
+.registration {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.registration-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-form {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31px;
+}
+
+.registration-item-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.registration-item {
+    width: 100%;
+    max-width: 360px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    text-transform: capitalize;
+    padding: 13px 17px 16px;
+    box-sizing: border-box;
+}
+
+.registration-name>input:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.registration-gender {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.registration-gender-item {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.registration-gender-item:hover {
+    color: #F16D7F;
+}
+
+.registration-gender-btn {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    margin-right: 10px;
+}
+
+
+.registration-login_details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.registration-login_details-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.registration-login_details-item {
+    width: 100%;
+    max-width: 360px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    text-transform: capitalize;
+    padding: 13px 17px 16px;
+    box-sizing: border-box;
+
+}
+
+.registration-login_details>input:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.registration-login_details>input:nth-child(3) {
+    margin-bottom: 15px;
+}
+
+.registration-password-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+/* .registration-form-btn-wrp {
+    width: 100%;
+    max-width: 167px;
+} */
+
+.registration-form-btn {
+    width: 100%;
+    max-width: 167px;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding: 17px 0;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    border: none;
+    transition: all .3s ease-out;
+}
+
+.registration-form-btn svg {
+    fill: currentColor;
+    margin-left: 20px;
+}
+
+.registration-form-btn:hover {
+    color: #F16D7F;
+    background-color: #FFFFFF;
+    outline: 1px solid #F16D7F;
+}
+
+.registration-form-btn:active {
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    transform: scale(.9);
+}
+
+
+.offer {
+    width: 100%;
+    max-width: 652px;
+}
+
+.offer-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.offer-subtitle {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+}
+
+.offer-list {
+    margin-left: 30px;
+    list-style: url(../img/shape.png);
+
+}
+
+.offer-list-item {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+.registration-page {
+    margin-top: 96px;
+}
+
+
+
+/* Адаптив Index для планшета */
+
+@media (max-width:768px) {
+
+    .top {
+        padding: 20px 32px;
+    }
+
+    .banner-wrp {
+        min-height: 368px;
+    }
+
+    .banner {
+        min-height: 368px;
+        background-size: contain;
+        background-position: 110px 5px;
+    }
 }
