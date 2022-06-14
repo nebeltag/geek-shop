@@ -424,7 +424,7 @@ li a {
     padding-top: 1px;
 }
 
-.banner-wrp {
+.banner-block {
     min-height: 764px;
     background-color: #F1E4E6;
     margin: 0 0 65px 0;
@@ -2391,7 +2391,7 @@ main {
         box-sizing: border-box;
     }
 
-    .banner-wrp {
+    .banner-block {
         min-height: 368px;
         margin: 0 0 20px 0;
     }
@@ -2405,6 +2405,7 @@ main {
     .brand {
         width: 100%;
         max-width: 296px;
+        height: 78px;
         margin: 0;
         padding-right: 32px;
         top: 138px;
@@ -2526,5 +2527,54 @@ main {
 
     .media-block {
         padding: 0 22px 0 32px;
+    }
+}
+
+@media (max-width:375px) {
+
+    .top {
+        padding: 18px 16px;
+    }
+
+    .account-btn {
+        display: none;
+    }
+
+    .cart-btn-link {
+        display: none;
+    }
+
+    .menu-btn {
+        margin: 0;
+    }
+
+    .banner {
+        background-image: none;
+
+    }
+
+    .brand {
+        max-width: 250px;
+        height: 66px;
+        padding: 0;
+    }
+
+    .brand::before {
+        height: 61px;
+        top: 5px;
+    }
+
+    .brand-title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .brand-title span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
     }
 }
