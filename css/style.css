@@ -2475,12 +2475,12 @@ main {
     }
 
     .product-item {
-        max-width: 352px;
+        /* max-width: 352px; */
         margin: 0 0 16px 0;
     }
 
     .item-img {
-        max-width: 352px;
+        /* max-width: 352px; */
     }
 
     .shop-features {
