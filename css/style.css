@@ -2479,9 +2479,9 @@ main {
         margin: 0 0 16px 0;
     }
 
-    .item-img {
-        /* max-width: 352px; */
-    }
+    /* .item-img {
+        max-width: 352px;
+    } */
 
     .shop-features {
         margin: 65px 0 0 0;
