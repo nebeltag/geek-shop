@@ -1551,7 +1551,7 @@ main {
 
 .moschino-product-cart-text {
     width: 100%;
-    max-width: 555px;
+    max-width: 580px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2580,7 +2580,49 @@ main {
         padding: 0 0 10px 0;
     }
 
+
+
+    /* адаптив для product 768px */
+
+    .product-nav-wrp {
+        margin: 0;
+    }
+
+    .product-cart {
+        margin: 0;
+    }
+
+    .carusel {
+        min-height: 624px;
+    }
+
+    .product-cart-image img {
+        display: block;
+        min-height: 565px;
+        max-width: 466px;
+    }
+
+    .moschino-product-cart {
+        top: 0;
+    }
+
+    .product-page-products {
+        margin: 129px 0;
+    }
+
+    .product-page-products>div>ul>li:nth-child(3) {
+        display: none;
+    }
+
+    .product-page {
+        margin: 0;
+    }
 }
+
+
+
+
+
 
 
 
