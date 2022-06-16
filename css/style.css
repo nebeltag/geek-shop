@@ -1693,7 +1693,7 @@ main {
 }
 
 .shopping-cart-top {
-    background-color: #F1E4E6;
+    background-color: #F8F3F4;
     min-height: 148px;
     display: flex;
     align-items: center;
@@ -2145,7 +2145,7 @@ main {
 }
 
 .registration-top {
-    background-color: #F1E4E6;
+    background-color: #F8F3F4;
     min-height: 148px;
     display: flex;
     align-items: center;
@@ -2227,6 +2227,14 @@ main {
     line-height: 13px;
     color: #000000;
     margin-right: 20px;
+}
+
+#other {
+    visibility: hidden;
+}
+
+.registration-gender>label:nth-child(6) {
+    visibility: hidden;
 }
 
 .registration-gender-item:hover {
@@ -2679,6 +2687,60 @@ main {
         margin: 38px 0 0 0;
         height: 214px;
     }
+
+
+
+    /* адаптив для registration 768px */
+
+    .registration-top-title {
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .registration {
+        margin: 40px 0 0 0;
+    }
+
+    .registration-block {
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    #other {
+        visibility: visible;
+    }
+
+    .registration-gender>label:nth-child(6) {
+        visibility: visible;
+    }
+
+    .offer-title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 0 32px 0;
+    }
+
+    .offer-subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .offer-list-item {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .offer {
+        width: 100%;
+        max-width: 354px;
+    }
+
 
 }
 
