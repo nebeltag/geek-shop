@@ -2749,11 +2749,6 @@ main {
 
 
 
-
-
-
-
-
 @media (max-width:375px) {
 
     /* адаптив для index 375px */
@@ -3148,5 +3143,26 @@ main {
 
     .cart-page {
         margin: 96px 0 0 0;
+    }
+
+
+
+    /* адаптив для registration 375px */
+
+    .registration-top-title {
+        text-align: center;
+    }
+
+    .registration-block {
+        flex-direction: column;
+        padding: 0 9px;
+    }
+
+    .offer {
+        margin: 40px 0 0 0;
+    }
+
+    .registration-page {
+        margin: 100px 0 0 0;
     }
 }
